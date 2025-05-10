@@ -1066,7 +1066,10 @@ def app_sst_with_video():
             #audio_receiver_size=2048,  #1024　#512 #デフォルトは4
             #小さいとQueue overflow. Consider to set receiver size bigger. Current size is 1024.
             queued_audio_frames_callback=queued_audio_frames_callback,
-            rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
+            rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]},
+                                           {"urls": ["stun:stun1.l.google.com:19302"]},
+                                           {"urls": ["stun:stun2.l.google.com:19302"]},
+                                           ]},
             media_stream_constraints={"video": True, "audio": True},
             video_processor_factory=VideoTransformer,  
         )
