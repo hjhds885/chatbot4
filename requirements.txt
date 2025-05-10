@@ -7,6 +7,7 @@ langgraph==0.2.68
 langgraph-checkpoint==2.0.10
 langgraph-prebuilt==0.1.8
 langgraph-sdk==0.1.51
+google-cloud-aiplatform==1.81.0
 exa-py==1.9.1
 opencv-python-headless==4.11.0.86
 av==14.2.0
